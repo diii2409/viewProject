@@ -5,6 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>WINX</title>
+		<link rel="stylesheet" href="__var.css" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,20 +32,82 @@
 		</div>
 		<div class="container">
 			<header class="container__header">
-				<span class="header__title">
-					<h2>WINX</h2>
-				</span>
 				<button type="button" class="btn header__btn-back">
 					<i class="fa-regular fa-circle-xmark"></i>
 				</button>
 			</header>
 			<div class="container__warp">
-				<div class="container__user"></div>
+				<div class="container__user">
+					<ui class="users__list">
+						<li class="user first">
+							<div
+								class="user-avatar"
+								style="background-image: url(./image/0.svg)"></div>
+							<div class="user-infor">
+								<span class="user-infor__name">Thu Ngân</span>
+								<span class="user-infor__points">120</span>
+							</div>
+						</li>
+						<li class="user second turn">
+							<div
+								class="user-avatar"
+								style="background-image: url(./image/29.svg)"></div>
+							<div class="user-infor">
+								<span class="user-infor__name">Nhựt Duy</span>
+								<span class="user-infor__points">220</span>
+							</div>
+						</li>
+						<li class="user third">
+							<div
+								class="user-avatar"
+								style="background-image: url(./image/1.svg)"></div>
+							<div class="user-infor">
+								<span class="user-infor__name">Quý Tứ</span>
+								<span class="user-infor__points">220</span>
+							</div>
+						</li>
+						<li class="user">
+							<div
+								class="user-avatar"
+								style="background-image: url(./image/4.svg)"></div>
+							<div class="user-infor">
+								<span class="user-infor__name">Sugger daddy</span>
+								<span class="user-infor__points">2110</span>
+							</div>
+						</li>
+						<li class="user">
+							<div
+								class="user-avatar"
+								style="background-image: url(./image/5.svg)"></div>
+							<div class="user-infor">
+								<span class="user-infor__name">Sugger baby</span>
+								<span class="user-infor__points">20</span>
+							</div>
+						</li>
+						<li class="user">
+							<div
+								class="user-avatar"
+								style="background-image: url(./image/1.svg)"></div>
+							<div class="user-infor">
+								<span class="user-infor__name">Nhựt Duy</span>
+								<span class="user-infor__points">220</span>
+								<span class="user-infor__empty">Empty</span>
+							</div>
+						</li>
+						<li class="user empty">
+							<div class="user-avatar" style="background-image: url()"></div>
+							<div class="user-infor">
+								<span class="user-infor__name">Nhựt Duy</span>
+								<span class="user-infor__points">220</span>
+								<span class="user-infor__empty">Empty</span>
+							</div>
+						</li>
+					</ui>
+				</div>
 				<div class="container__play">
 					<div class="play__canvas"></div>
 					<div class="play__interaction">
 						<div class="interaction__answer"></div>
-
 						<div class="interaction__chat"></div>
 					</div>
 				</div>
