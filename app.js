@@ -61,6 +61,33 @@ function updateLineWidth() {
 	// Update line width when window is resized
 	ctx.lineWidth = calculateLineWidth();
 }
+const containerWrapper = document.getElementById("containerWrapper");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+containerWrapper.addEventListener("mousedown", (e) => {
+	isDown = true;
+	startX = e.pageX - containerWrapper.offsetLeft;
+	scrollLeft = containerWrapper.scrollLeft;
+});
+
+containerWrapper.addEventListener("mouseleave", () => {
+	isDown = false;
+});
+
+containerWrapper.addEventListener("mouseup", () => {
+	isDown = false;
+});
+
+containerWrapper.addEventListener("mousemove", (e) => {
+	if (!isDown) return;
+	e.preventDefault();
+	const x = e.pageX - containerWrapper.offsetLeft;
+	const walk = (x - startX) * 3; // You can adjust this value for smoother scrolling
+	containerWrapper.scrollLeft = scrollLeft - walk;
+});
+
 //******************************************************************************
 //******************************************************************************
 // USE INTERFACE MOBIE

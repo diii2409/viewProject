@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>WINX</title>
-		<link rel="stylesheet" href="__var.css" />
+		<link rel="stylesheet" href="base.css" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,7 +36,7 @@
 					<i class="fa-regular fa-circle-xmark"></i>
 				</button>
 			</header>
-			<div class="container__warp">
+			<div class="container__warp" id="containerWrapper">
 				<div class="container__user">
 					<ui class="users__list">
 						<li class="user first">
@@ -99,6 +99,7 @@
 							<div class="user-infor">
 								<span class="user-infor__name">Nhựt Duy</span>
 								<span class="user-infor__points">220</span>
+								<!-- Phải thêm dòng nayf khi có từ khóa empty  -->
 								<span class="user-infor__empty">Empty</span>
 							</div>
 						</li>
@@ -107,8 +108,125 @@
 				<div class="container__play">
 					<div class="play__canvas"></div>
 					<div class="play__interaction">
-						<div class="interaction__answer"></div>
-						<div class="interaction__chat"></div>
+						<div class="interaction__answer">
+							<h5 class="interaction__tille">ANSWERS</h5>
+							<ul class="interaction__history">
+								<li class="message right">
+									<span class="message__user-name">Naruto </span>:
+									<span class="message__content">I will be come HOKAGE </span>
+								</li>
+								<li class="message almost-right">
+									<span class="message__user-name">Hinata </span>:
+									<span class="message__content">I will marry Naruto </span>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Sasuke </span>:
+									<span class="message__content">I will destroy Konoha </span>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+							</ul>
+							<input
+								type="text"
+								name="answer"
+								class="interaction__input"
+								placeholder="Answer here..."
+								autocomplete="off"
+								autocorrect="off"
+								autocapitalize="off"
+								maxlength="100"
+								enterkeyhint="send"
+								value=""
+								fdprocessedid="gvsnt" />
+						</div>
+						<div class="interaction__chat disable">
+							<h5 class="interaction__tille">CHAT</h5>
+							<ul class="interaction__history">
+								<li class="message">
+									<span class="message__user-name">Naruto </span>:
+									<span class="message__content">I will be come HOKAGE </span>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Hinata </span>:
+									<span class="message__content">I will marry Naruto </span>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Sasuke </span>:
+									<span class="message__content">I will destroy Konoha </span>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+								<li class="message">
+									<span class="message__user-name">Boruto </span>:
+									<span class="message__content">
+										aaaaa aaaa aaaa hurt aaaa Rasengan aaaa ConCac</span
+									>
+								</li>
+							</ul>
+							<input
+								type="text"
+								name="message"
+								class="interaction__input"
+								placeholder="Enter message here..."
+								autocomplete="off"
+								autocorrect="off"
+								autocapitalize="off"
+								maxlength="100"
+								enterkeyhint="send"
+								value=""
+								fdprocessedid="gvsnt"
+								disabled />
+						</div>
 					</div>
 				</div>
 			</div>
